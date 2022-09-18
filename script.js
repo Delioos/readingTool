@@ -1,7 +1,9 @@
 // function that take the text from the text area and split it into words
 function getText() {
+    document.getElementById("app").innerHTML = ''
     var text = document.getElementById("text").value
     var banWords = document.getElementById("banWords").value.split(' ')
+    
     var words = text.split(" ")
     words = words.filter(elem => (banWords.includes(elem) == false)).map(elem => elem.toLowerCase()).map(elem => elem.replace(/[^a-zA-Z]/g, "")).filter(elem => elem != "")
     topOccurence(words)
@@ -28,6 +30,7 @@ function topOccurence(words) {
 
         document.getElementById("app").innerHTML += beginning + nb + line  + "<br>"
     }
+    
 }
 function script() {
 console.log(getText());
