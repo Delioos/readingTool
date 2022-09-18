@@ -1,0 +1,25 @@
+body {
+background-color: rgba(0, 24, 90, 0.404);
+}
+h1 {
+    /* i wanna use a neue font */
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 211, 249);
+    text-align: center;
+}
+footer {
+    color: rgba(72, 81, 107, 0.404);
+    text-align: right;
+    position: fixed;
+    bottom: 10px;
+    width: 90%;
+}
+#app {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(255, 234, 248);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif
+}
